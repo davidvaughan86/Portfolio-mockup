@@ -1,0 +1,251 @@
+body {
+    background-color: black;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #f9e0ae
+}
+
+p{
+    color: white;
+}
+
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr auto;
+    grid-template-rows: 1fr 1fr 1fr 1fr .3fr;
+    grid-template-areas: 
+    'profile info info info'
+    'highlights1 highlights2 highlights3 highlights4'
+    'projects1 projects2 projects2 projects3'
+    'projects1 projects2 projects2 projects3'
+    'footer footer footer footer'
+    ;
+    gap: 2%;
+    
+}
+
+
+
+.profile {
+    grid-area: profile;
+    background: #f9e0ae;
+    width:80%;
+    height: 100%;
+    border:5px solid gold;
+    
+    
+}
+
+.info {
+    grid-area: info;
+    background-color: #fc8621
+}
+
+.infoContainer {
+    display: flex;
+    flex-direction: row;
+    background-color: red;
+    width: 100%;
+    height:100%
+}
+
+.card1 {
+    background-color: #c24914;
+    display: flex;
+    border: 2px solid gold;
+    width: 100%;
+    height:100%;
+    max-width: 50%;
+}
+
+.card2 {
+    background-color: #c24914;
+    display: flex;
+    border: 2px solid gold;
+    width: 100%;
+    height:100%;
+    max-width: 50%;
+}
+.card3 {
+    background-color: #c24914;
+    display: flex;
+    border: 2px solid gold;
+    width: 100%;
+    height:100%;
+    max-width: 50%;
+}
+
+
+
+.highlights2{
+    grid-area: highlights2;
+    background-color: #c24914;
+    border: 1px solid gold;
+    border-radius: 100%;
+    width: 40%;
+    height: 100%;
+    margin-left: 40%;
+    
+}
+.highlights3{
+    grid-area: highlights3;
+    background-color: #c24914;
+    border: 1px solid gold;
+    border-radius: 100%;
+    width: 40%;
+    height: 100%;
+    margin-left: 40%;
+}
+.highlights4{
+    grid-area: highlights4;
+    background-color: #c24914;
+    border: 1px solid gold;
+    border-radius: 100%;
+    width: 40%;
+    height: 100%;
+    margin-left: 40%;
+}
+.highlights1 {
+    grid-area: highlights1;
+    background-color: #c24914;
+    border: 1px solid gold;
+    border-radius: 100%;
+    width: 40%;
+    height: 100%;
+    margin-left: 40%;
+    
+}
+
+
+
+
+.projects1 {
+    grid-area: projects1;
+    background-color: #682c0e;
+}
+
+#contactMe {
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+    width: 100%;
+    height:100%
+}
+
+#email {
+    background-color: #c24914;
+    display: flex;
+    border: 2px solid gold;
+    width: 100%;
+    height:100%
+ 
+}
+
+#resume {
+    background-color: #c24914;
+    display: flex;
+    border: 2px solid gold;
+    width: 100%;
+    height:100%
+
+}
+
+.projects2 {
+    grid-area: projects2;
+    background-color: #682c0e;
+}
+
+
+.projectContainer {
+    background-color: red;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    
+}
+.githubContainer1{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    height: 100%;
+}
+.githubContainer2{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    height: 100%;
+}
+
+.github1{
+    background-color: #c24914;
+    display: flex;
+    border: 2px solid gold;
+    width: 100%;
+    height:100%
+}
+.github2{
+    background-color: #c24914;
+    display: flex;
+    border: 2px solid gold;
+    width: 100%;
+    height:100%
+}
+.github3{
+    background-color: #c24914;
+    display: flex;
+    border: 2px solid gold;
+    width:100%;
+    height: 100%;
+}
+.github4{
+    background-color: #c24914;
+    display: flex;
+    border: 2px solid gold;
+    width:100%;
+    height: 100%;
+}
+
+
+
+.projects3 {
+    grid-area: projects3;
+    background-color: #682c0e
+}
+
+#social {
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+    width: 100%;
+    height:100%
+}
+
+#linkedIn {
+    background-color: #c24914;
+    display: flex;
+    border: 2px solid gold;
+    width: 100%;
+    height:100%
+ 
+}
+
+#twitter {
+    background-color: #c24914;
+    display: flex;
+    border: 2px solid gold;
+    width: 100%;
+    height:100%
+
+}
+#gitHub {
+    background-color: #c24914;
+    display: flex;
+    border: 2px solid gold;
+    width: 100%;
+    height:100%
+
+}
