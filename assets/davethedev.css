@@ -14,13 +14,13 @@ p{
 .container {
     display: grid;
     height: 100vh;
-    grid-template-columns: 1fr 1fr 1fr 1fr auto;
+    grid-template-columns: .8fr .8fr .8fr 1.7fr auto;
     grid-template-rows: 1fr 1fr 1fr 1fr .3fr;
     grid-template-areas: 
-    'profile info info info'
-    'highlights1 highlights2 highlights3 highlights4'
-    'projects1 projects2 projects2 projects3'
-    'projects1 projects2 projects2 projects3'
+    'profile info info projects3'
+    'profile highlights2 highlights3 projects3'
+    'profile highlights2 highlights3  projects3'
+    'profile projects2 projects2 projects3'
     'footer footer footer footer'
     ;
     gap: 2%;
@@ -41,7 +41,14 @@ p{
 
 .info {
     grid-area: info;
-    background-color: #fc8621
+    background-color: #fc8621;
+    width: 90%;
+    height:100%;
+    max-width: 100%;
+    max-height: 50%;
+    /* margin: 5% */
+    /* align-self: center; */
+    
 }
 
 .infoContainer {
@@ -49,8 +56,10 @@ p{
     flex-direction: row;
     background-color: red;
     width: 100%;
-    height:100%
+    height:100%;
+    
 }
+
 
 .card1 {
     background-color: #c24914;
@@ -58,7 +67,10 @@ p{
     border: 2px solid gold;
     width: 100%;
     height:100%;
-    max-width: 50%;
+    
+    
+    
+    
 }
 
 .card2 {
@@ -67,16 +79,9 @@ p{
     border: 2px solid gold;
     width: 100%;
     height:100%;
-    max-width: 50%;
+    
 }
-.card3 {
-    background-color: #c24914;
-    display: flex;
-    border: 2px solid gold;
-    width: 100%;
-    height:100%;
-    max-width: 50%;
-}
+
 
 
 
@@ -84,40 +89,21 @@ p{
     grid-area: highlights2;
     background-color: #c24914;
     border: 1px solid gold;
-    border-radius: 100%;
-    width: 40%;
-    height: 100%;
-    margin-left: 40%;
+    width: 75%;
+    height: 75%;
+    align-self: center;
     
 }
+
 .highlights3{
     grid-area: highlights3;
     background-color: #c24914;
     border: 1px solid gold;
-    border-radius: 100%;
-    width: 40%;
-    height: 100%;
-    margin-left: 40%;
+    width: 75%;
+    height: 75%;
+    align-self: center;
 }
-.highlights4{
-    grid-area: highlights4;
-    background-color: #c24914;
-    border: 1px solid gold;
-    border-radius: 100%;
-    width: 40%;
-    height: 100%;
-    margin-left: 40%;
-}
-.highlights1 {
-    grid-area: highlights1;
-    background-color: #c24914;
-    border: 1px solid gold;
-    border-radius: 100%;
-    width: 40%;
-    height: 100%;
-    margin-left: 40%;
-    
-}
+
 
 
 
@@ -127,7 +113,7 @@ p{
     background-color: #682c0e;
 }
 
-#contactMe {
+/* #contactMe {
     display: flex;
     flex-direction: column;
     background-color: red;
@@ -151,11 +137,12 @@ p{
     width: 100%;
     height:100%
 
-}
+} */
 
 .projects2 {
     grid-area: projects2;
     background-color: #682c0e;
+    width: 90%;
 }
 
 
@@ -166,14 +153,15 @@ p{
     width: 100%;
     height: 100%;
     
+    
 }
-.githubContainer1{
+/* .githubContainer1{
     display: flex;
     flex-direction: column;
     width:100%;
     height: 100%;
-}
-.githubContainer2{
+} */
+/* .githubContainer2{
     display: flex;
     flex-direction: column;
     width:100%;
@@ -207,7 +195,7 @@ p{
     border: 2px solid gold;
     width:100%;
     height: 100%;
-}
+} */
 
 
 
@@ -221,15 +209,19 @@ p{
     flex-direction: column;
     background-color: red;
     width: 100%;
-    height:100%
+    height:100%;
 }
 
+#social img{
+    max-width: 100%;
+}
 #linkedIn {
     background-color: #c24914;
     display: flex;
     border: 2px solid gold;
     width: 100%;
     height:100%
+    
  
 }
 

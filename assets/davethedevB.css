@@ -1,0 +1,85 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 3fr 1fr 1fr 1fr 1fr 1fr 3fr;
+    height: 200vh;
+    grid-template-areas: 
+    
+    'primary primary primary'
+    'skills1 skills2 skills3'
+    'proj1 proj1pic proj1info'
+    'proj2 proj2pic proj2info'
+    'proj3 proj3pic proj3info'
+    'proj4 proj4pic proj4info'
+    'end end end end';
+    gap:1%
+    ;
+}
+body {
+    background-color: black;
+}
+.primary {
+    grid-area: primary;
+    
+    background-color: blue
+}
+.skills1 {
+    grid-area: skills1;
+    background-color: blue
+}
+.skills2 {
+    grid-area: skills2;
+    background-color: blue
+}
+.skills3 {
+    grid-area: skills3;
+    background-color: blue
+}
+.proj1 {
+    grid-area: proj1;
+    background-color: blue
+}
+.proj1pic {
+    grid-area: proj1pic;
+    background-color: blue
+}
+.proj1info {
+    grid-area: proj1info;
+    background-color: blue
+}
+.proj2 {
+    grid-area: proj2;
+    background-color: blue
+}
+.proj2pic {
+    grid-area: proj2pic;
+    background-color: blue
+}
+.proj2info{
+    grid-area: proj2info;
+    background-color: blue
+}
+.proj3 {
+    grid-area: proj3;
+    background-color: blue
+}
+.proj3pic {
+    grid-area: proj3pic;
+    background-color: blue
+}
+.proj3info{
+    grid-area: proj3info;
+    background-color: blue
+}
+.proj4 {
+    grid-area: proj3;
+    background-color: blue
+}
+.proj4pic {
+    grid-area: proj3pic;
+    background-color: blue
+}
+.proj4info{
+    grid-area: proj3info;
+    background-color: blue
+}
