@@ -1,85 +1,164 @@
 .container {
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: 3fr 1fr 1fr 1fr 1fr 1fr 3fr;
-    height: 200vh;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-rows: .5fr 3fr 1fr 1fr 1fr 1fr 1fr 3fr;
+    height: 250vh;
     grid-template-areas: 
-    
+    'nav nav nav'
     'primary primary primary'
     'skills1 skills2 skills3'
     'proj1 proj1pic proj1info'
     'proj2 proj2pic proj2info'
     'proj3 proj3pic proj3info'
     'proj4 proj4pic proj4info'
-    'end end end end';
-    gap:1%
+    'finale finale finale';
+    
     ;
 }
 body {
     background-color: black;
 }
+nav {
+    grid-area: nav;
+    background-image: url('./images/bg-small.jpg');
+}
+
 .primary {
     grid-area: primary;
+    background-color: brown;
+    display: flex;
+    justify-content: center;
+    background-image: url('./images/parallax.jpg');
+
+}
+.profilepic {
+    display: flex;
     
-    background-color: blue
 }
-.skills1 {
+
+.primaryContainer {
+    display: flex;
+    width: 200px;
+    height: 300px;
+    
+    border: 10px solid black;
+    border-radius: 100%;
+
+}
+.profilepic img {
+    width: 100%;
+    border-radius: 100%;
+}
+
+.skill1 {
     grid-area: skills1;
-    background-color: blue
+    
+    background-image: url('./images/bg-small.jpg');
 }
-.skills2 {
+.skill2 {
     grid-area: skills2;
-    background-color: blue
+    background-image: url('./images/bg-small.jpg');
 }
-.skills3 {
+.skill3 {
     grid-area: skills3;
-    background-color: blue
+    background-image: url('./images/bg-small.jpg');
 }
 .proj1 {
     grid-area: proj1;
-    background-color: blue
+    background-image: url('./images/parallax.jpg');
+
 }
 .proj1pic {
     grid-area: proj1pic;
-    background-color: blue
+    background-image: url('./images/parallax.jpg');
+    display: flex;
+    
+}
+.proj1picContainer {
+    display: flex;
+    justify-content: center;
+
 }
 .proj1info {
     grid-area: proj1info;
-    background-color: blue
+    background-image: url('./images/parallax.jpg');
 }
 .proj2 {
     grid-area: proj2;
-    background-color: blue
+background-image: url('./images/bg-small.jpg');
 }
+
 .proj2pic {
     grid-area: proj2pic;
-    background-color: blue
+background-image: url('./images/bg-small.jpg');
+display: flex;
+}
+
+.proj2picContainer {
+    display: flex;
+    justify-content: center;
+
 }
 .proj2info{
     grid-area: proj2info;
-    background-color: blue
+background-image: url('./images/bg-small.jpg');
 }
 .proj3 {
     grid-area: proj3;
-    background-color: blue
+    background-image: url('./images/parallax.jpg');
 }
 .proj3pic {
     grid-area: proj3pic;
-    background-color: blue
+    background-image: url('./images/parallax.jpg');
+    display: flex;
+}
+
+.proj3picContainer {
+    display: flex;
+    justify-content: center;
+
 }
 .proj3info{
     grid-area: proj3info;
-    background-color: blue
+    background-image: url('./images/parallax.jpg');
 }
 .proj4 {
-    grid-area: proj3;
-    background-color: blue
+    grid-area: proj4;
+    background-image: url('./images/bg-small.jpg');
 }
 .proj4pic {
-    grid-area: proj3pic;
-    background-color: blue
+    grid-area: proj4pic;
+    background-image: url('./images/bg-small.jpg');
+    display: flex;
 }
-.proj4info{
-    grid-area: proj3info;
-    background-color: blue
+
+.proj4picContainer {
+    display: flex;
+    justify-content: center;
+
+}
+.proj4info {
+    grid-area: proj4info;
+    background-image: url('./images/bg-small.jpg');
+}
+
+.finale {
+    grid-area: finale;
+    background-image: url('./images/parallax.jpg');
+}
+
+p {
+    color: white;
+}
+
+h3 {
+    color: white
+}
+
+h1 {
+    color: white
+}
+
+h4 {
+    color: white
 }
